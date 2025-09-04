@@ -4,8 +4,21 @@ public class LivroDeNotas{
     //primitivas: int, long, double
     private String disciplina;
 
-    public void setDisciplina(String d){
-        disciplina = d;
+    //Construtor e não é método
+    //Todo new executa o que tem dentro do construtor
+    public LivroDeNotas(String disciplina){
+        System.out.println("Criando mais um objeto...");
+        setDisciplina(disciplina);
+    }
+
+
+    public void setDisciplina(String disciplina){
+        if(disciplina.length() = 3)
+        this.disciplina = disciplina;
+    }
+
+    public String getDisciplina(){
+        return disciplina;
     }
 
     public void exibirMensagem(){
